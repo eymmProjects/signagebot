@@ -85,9 +85,9 @@ const HeroSection = () => {
             </div>
 
             <Image
-              data-aos="fade-up"
+              data-aos="flip-up"
               data-aos-duration="1000"
-              data-aos-delay="200"
+              data-aos-delay="300"
               data-aos-offset="300"
               src={BannerImg}
               alt="App screenshot"

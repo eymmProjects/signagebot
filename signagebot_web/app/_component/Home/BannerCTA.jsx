@@ -9,22 +9,24 @@ const BannerCTA = ({ className }) => {
           <div className="hidden sm:mb-8 sm:flex sm:justify-center"></div>
           <div className="text-center max-w-screen-xl mx-auto ">
             <h1 className="text-3xl font-semibold  tracking-tight text-white sm:text-6xl">
-              How can we help?
+              How may we assist you?
             </h1>
             <div className="mx-auto  max-w-7xl">
               <p className="mt-6 text-lg leading-8 font-light text-white">
-                Why would your business need Digital Signage? Simply put, it
-                will elevate your brand, engage your audience and make a lasting
-                impression on your customers. Digital signage can improve your
-                business by effectively attracting and engaging customers,
-                delivering targeted messages, and increasing brand awareness in
-                a dynamic and impactful way. It will boost your business with
-                real-time updates, data-driven insights, and visually appealing
-                content, driving sales and customer loyalty. Best of all, you
-                can open your FREE account and start building your presentation
-                right now. Manage your screens and do it at no cost. Choose from
-                hundreds of templates and create an amazing digital signage
-                presentation with just a few clicks. Are you ready to be amazed?
+                Discover the transformative power of digital signage for your
+                business with SignageBot. Elevate your brand, captivate your
+                audience, and leave a memorable impression on your customers. By
+                leveraging the dynamic capabilities of digital signage, your
+                business can draw in and engage customers more effectively,
+                communicate targeted messages directly, and enhance brand
+                recognition. Benefit from real-time content updates, actionable
+                data insights, and eye-catching visuals that together drive
+                sales and foster customer loyalty. Starting today, you can
+                create a FREE account and begin crafting your digital signage
+                presentations effortlessly. Control your displays at no cost and
+                choose from a vast selection of templates to quickly assemble
+                stunning digital signage content. Are you prepared to be
+                astonished?
               </p>
             </div>
           </div>

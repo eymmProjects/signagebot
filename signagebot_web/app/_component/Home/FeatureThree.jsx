@@ -20,6 +20,12 @@ export const EngineerData = [
       "Utilize AI-driven analytics to gain deep insights into audience engagement and content performance, optimizing your strategy for maximum impact. ",
     icon: DeviceClockIcon,
   },
+  {
+    name: "Robotic Signage Solutions",
+    description:
+      " Experience the cutting edge wi1th robotic displays that move, interact, and adapt to your audience in unprecedented ways.",
+    icon: DeviceClockIcon,
+  },
 ];
 
 function DeviceArrowIcon(props) {

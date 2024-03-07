@@ -13,19 +13,18 @@ export const Feature = () => {
               <div className="mx-auto w-full text-center flex justify-center">
                 <div className="max-w-lg">
                   <h1 className=" text-4xl font-bold tracking-tight text-white-800 sm:text-6xl">
-                    Maximize Advertising
+                    Enhance Your Advertising
                   </h1>
                   <div className="">
                     <span className=" text-2xl font-semibold leading-10 text-white">
-                      Value with Glorious Image
+                      Impact with Stunning Visuals
                     </span>
                   </div>
                   {/* <DividerWithoutPadding classNameProps="pt-10" /> */}
                   <p className="mt-6 text-lg leading-8 text-gray-400">
-                    LST can provide premium images with up to 10000 nits of
-                    brightness, which is more sparkle than others in any
-                    environment, maximize the value of your advertising content
-                    and attracting passers-by.
+                    {
+                      "LST offers superior-quality images that shine up to 10000 nits of brightness, outshining competitors in any setting. This exceptional luminance boosts your advertising's effectiveness, captivating the attention of those passing by."
+                    }
                   </p>
                 </div>
               </div>

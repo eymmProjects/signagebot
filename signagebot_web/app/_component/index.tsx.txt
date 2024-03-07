@@ -1,0 +1,166 @@
+import Navbar from "@/components/Navbar/Navbar";
+import React, { useEffect, useState } from "react";
+import "../../styles/globals.css";
+import Footer from "@/components/Footer";
+import DividerWithoutPadding from "@/components/Dividers/DividerWithoutPadding";
+// import styles from "./Performance2.module.css";
+import styles from "../../components/Performance/Performance2.module.css";
+
+import StepComp from "./StepComp";
+import Link from "next/link";
+// import Step1 from "@/postsSteps/whatIsIt";
+import { useRouter } from "next/router";
+import { GetStaticProps } from "next";
+
+interface SubStep {
+  name: JSX.Element; // Since `name` contains JSX elements
+  link: string;
+}
+
+interface Step {
+  id: string;
+  title: string;
+  subSteps: SubStep[];
+}
+
+const steps = [
+  {
+    id: "01",
+    title: "Introduction",
+    subSteps: [
+      {
+        name: "Roadmap sets your team direction",
+        link: "/postsSteps/whatIsIt",
+        // name: <Step1 />,
+      },
+      {
+        name: "Roadmap sets ",
+        link: "/postsSteps/whatIsIt",
+        // name: <Step1 />,
+      },
+      {
+        name: "Team direction",
+        link: "/postsSteps/whatIsIt",
+        // name: <Step1 />,
+      },
+    ],
+  },
+];
+
+const Method: React.FC = ({}) => {
+  return (
+    <div className="bg-primary">
+      <Navbar className="bg-primary top-0 z-50 fixed bg-opacity-100 backdrop-blur-lg" />
+
+      <main>
+        <div className="bg-primary">
+          <div className="relative isolate overflow-hidden ">
+            <div className="mx-auto max-w-5xl pt-10   lg:grid lg:grid-cols-2 lg:gap-x-8 lg:pt-40 lg:px-8 sm:pt-28">
+              <div className="px-6 lg:px-0 lg:pt-4">
+                <div className="mx-auto max-w-2xl">
+                  <div className="max-w-lg">
+                    <h1 className=" text-4xl font-bold tracking-tight text-white-800 sm:text-6xl">
+                      Linear Method
+                    </h1>
+                    <div className="">
+                      <span className=" text-2xl font-semibold leading-10 text-white">
+                        Practices for building
+                      </span>
+                    </div>
+                    <DividerWithoutPadding classNameProps="pt-10" />
+                    <p className="mt-6 text-lg leading-8 text-gray-400">
+                      At Linear we believe software can feel magical. Quality of
+                      software is driven by both the talent of its creators and
+                      how they feel while they’re crafting it. To bring back the
+                      right focus, these are the foundational and evolving ideas
+                      Linear is built on.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              {/* image */}
+              <div className=" sm:mt-24 md:mx-auto md:max-w-md lg:mx-0 lg:mt-0 lg:w-screen">
+                <div
+                  className="absolute inset-y-0 -z-10 -mr-10  bg-primary shadow-xl  md:-mr-20 lg:-mr-36"
+                  aria-hidden="true"
+                />
+                <div className="flex justify-end shadow-lg md:rounded-3xl">
+                  <div
+                    className={`${styles.glossy}  flex-col overflow-hidden relative z-[1] flex min-h-[300px] mt-0 w-[471px] max-w-full items-center pt-80 pb-12 px-5 self-start max-md:pt-24`}
+                  >
+                    <img
+                      loading="lazy"
+                      src="https://cdn.builder.io/api/v1/image/assets/TEMP/a561fa12-69cb-481f-b10f-eeeea19b7860?"
+                      className="absolute z-[-1] h-full w-full object-cover object-center inset-0  "
+                    />
+
+                    <div className="relative flex w-[265px] max-w-full flex-col items-stretch mt-52">
+                      <div className="text-stone-50 text-center text-2xl leading-8 tracking-wide mt-7">
+                        Designed for modern software teams
+                      </div>
+                      <div className="text-slate-300 text-center text-base leading-5 mt-5">
+                        Complete any action in seconds with the global command
+                        menu.
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className=" sm:h-10" />
+          </div>
+        </div>
+
+        <DividerWithoutPadding classNameProps=" divide-y divide-gray-800 lg:max-w-5xl  mx-auto  mb-10  " />
+
+        <div className="bg-primary">
+          <div className="mx-auto  max-w-md px-6 sm:max-w-3xl  lg:max-w-5xl lg:px-8">
+            <div className="divide-y divide-gray-800 ">
+              {steps.map((item) => (
+                <section
+                  key={item.id}
+                  className="lg:grid lg:grid-cols-12 lg:gap-0 "
+                  aria-labelledby="contact-heading"
+                >
+                  <h2
+                    id="contact-heading"
+                    className="text-3xl font-bold mt-5 text-gray-500 text-warm-gray-900 sm:text-3xl sm:tracking-tight"
+                  >
+                    {item.id}
+                  </h2>
+
+                  <div className=" mt-5 col-span-3 text-white gap-12 sm:grid-cols-1 sm:gap-x-8 sm:gap-y-12 ">
+                    <div className="mb-5">
+                      <h3 className="text-lg font-medium text-warm-gray-900">
+                        {item.title}
+                      </h3>
+                      <div className=" mt-5 w-[500px]">
+                        <ul className="">
+                          {item.subSteps.map((subStep, index) => (
+                            <li
+                              key={index}
+                              className="col-span-2 first-letter:text-sm font-light underline text-blue-500 "
+                            >
+                              <Link href={subStep.link}>{subStep.name}</Link>
+                            </li>
+                          ))}
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </section>
+              ))}
+
+              <section></section>
+            </div>
+          </div>
+        </div>
+      </main>
+
+      <Footer />
+    </div>
+  );
+};
+
+export default Method;

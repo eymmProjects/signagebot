@@ -1,0 +1,42 @@
+
+/* body {
+	margin: 0;
+	padding: 0;
+	font-family: sans-serif;
+	text-align: center;
+	background-color: #656565;
+	height: 100vh;
+	display: flex;
+	flex-flow: row wrap;
+	align-items: center;
+} */
+.container {
+	color: #10122b;
+	max-width: 900px;
+	width: 100%;
+	background-color: #050921;
+	margin: 0 auto;
+	padding: 2rem;
+	height: 200px;
+}
+.horizontal {
+	display: block;
+}
+.horizontal.gradient {
+    border: none;
+    min-height: 20px;
+    margin: 30px 0;
+    position: relative;
+    background: radial-gradient(ellipse farthest-side at top center, rgba(164, 153, 192, 0.185), transparent) top center no-repeat;
+    background-size: 100% 20px;
+}
+.horizontal.gradient:after {
+    background: linear-gradient(to right, transparent, rgb(24, 28, 82), rgba(22, 26, 73, 0.3), transparent);
+    content: "";
+    display: block;
+    height: 3px;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+}

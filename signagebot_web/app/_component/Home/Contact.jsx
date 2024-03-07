@@ -80,7 +80,7 @@ function ContactDetails() {
 
       <Border className=" pt-10">
         <dl className="mt-6 grid grid-cols-1 gap-8 text-sm sm:grid-cols-2">
-          {[["Copenhagen", " 1 Carlsberg Gate   1260, København, Denmark"]].map(
+          {[["Location 1", " 123 Location Gate   1260, "]].map(
             ([label, email]) => (
               <div key={email}>
                 <dt className="font-semibold text-white/60">{label}</dt>

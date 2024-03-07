@@ -71,7 +71,7 @@ function Footer() {
               </div>
               <div className="mt-10 md:mt-0">
                 <h3 className="text-sm font-semibold leading-6 text-white">
-                  Company
+                  Technology
                 </h3>
                 <ul role="list" className="mt-6 space-y-4">
                   {navigation.company.map((item) => (
@@ -90,7 +90,7 @@ function Footer() {
             <div className="md:grid md:grid-cols-2 md:gap-8">
               <div>
                 <h3 className="text-sm font-semibold leading-6 text-white">
-                  Resources
+                  Portfolio
                 </h3>
                 <ul role="list" className="mt-6 space-y-4">
                   {navigation.resource.map((item) => (
@@ -107,7 +107,7 @@ function Footer() {
               </div>
               <div className="mt-10 md:mt-0">
                 <h3 className="text-sm font-semibold leading-6 text-white">
-                  Developers
+                  Company
                 </h3>
                 <ul role="list" className="mt-6 space-y-4">
                   {navigation.developer.map((item) => (
